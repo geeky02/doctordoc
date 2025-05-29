@@ -1,0 +1,164 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for the Log In button in the navbar */
+.navbar-login-button {
+  background: linear-gradient(135deg, #2e8555 0%, #25c2a0 100%);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  box-shadow: 0 3px 12px rgba(46, 133, 85, 0.2);
+}
+
+.navbar-login-button:hover {
+  background: linear-gradient(135deg, #33925d 0%, #29d5b0 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(46, 133, 85, 0.3);
+}
+
+.navbar-login-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 8px rgba(46, 133, 85, 0.15);
+}
+
+/* Optional: Add a subtle icon or effect (e.g., login icon) */
+.navbar-login-button::before {
+  content: "🔒"; /* You can replace this with a FontAwesome icon if you have the library */
+  font-size: 0.9em;
+  margin-right: 5px;
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .navbar-login-button {
+  background: linear-gradient(135deg, #25c2a0 0%, #4fddbf 100%);
+}
+
+[data-theme="dark"] .navbar-login-button:hover {
+  background: linear-gradient(135deg, #29d5b0 0%, #5ce1c5 100%);
+}
+
+/* Styling for the Blogs button in the navbar */
+.navbar-blog-button {
+  background: linear-gradient(135deg, #6a1b9a 0%, #ab47bc 100%);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  box-shadow: 0 3px 12px rgba(106, 27, 154, 0.2);
+  margin-left: 2px;
+}
+
+.navbar-blog-button:hover {
+  background: linear-gradient(135deg, #8e24aa 0%, #ce93d8 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(106, 27, 154, 0.3);
+}
+
+.navbar-blog-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 8px rgba(106, 27, 154, 0.15);
+}
+
+/* Optional: Add a subtle icon (e.g., blog icon) */
+.navbar-blog-button::before {
+  content: "📝"; /* Replace with FontAwesome icon if preferred, e.g., <i class="fas fa-blog"></i> */
+  font-size: 0.9em;
+  margin-right: 5px;
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .navbar-blog-button {
+  background: linear-gradient(135deg, #ab47bc 0%, #ce93d8 100%);
+}
+
+[data-theme="dark"] .navbar-blog-button:hover {
+  background: linear-gradient(135deg, #ce93d8 0%, #e1bee7 100%);
+}
+
+/* Styling for the Docs button in the navbar */
+.navbar-docs-button {
+  background: linear-gradient(135deg, #0288d1 0%, #4fc3f7 100%);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  box-shadow: 0 3px 12px rgba(2, 136, 209, 0.2);
+  margin-left: 15px;
+}
+
+.navbar-docs-button:hover {
+  background: linear-gradient(135deg, #039be5 0%, #81d4fa 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(2, 136, 209, 0.3);
+}
+
+.navbar-docs-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 8px rgba(2, 136, 209, 0.15);
+}
+
+/* Optional: Add a subtle icon (e.g., docs icon) */
+.navbar-docs-button::before {
+  content: "📚"; /* Replace with FontAwesome icon if preferred, e.g., <i class="fas fa-book"></i> */
+  font-size: 0.9em;
+  margin-right: 5px;
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .navbar-docs-button {
+  background: linear-gradient(135deg, #4fc3f7 0%, #b3e5fc 100%);
+}
+
+[data-theme="dark"] .navbar-docs-button:hover {
+  background: linear-gradient(135deg, #81d4fa 0%, #e1f5fe 100%);
+}
